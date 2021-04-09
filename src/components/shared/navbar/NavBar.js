@@ -5,8 +5,9 @@ import { CartFill } from 'react-bootstrap-icons';
 import SearchBar from '../searchbar/SearchBar';
 
 import './NavBar.css';
-//import { Logo } from '../../shared/logo/logo';
-import { ReactComponent as Logo } from '../../../assets/images/logo.svg';
+
+import { Logo } from '../../shared/logo/logo';
+import { ButtonCart } from '../buttoncart/ButtonCart';
 
 export const NavBar = () => {
     
@@ -14,30 +15,13 @@ export const NavBar = () => {
         
         <div className="headerBox">
             <div className="containerBox">
+                                
+                <Logo />
                 
-                <div className="logoBox">
-                    <a href="https://www.superfuds.com/" target="_blank">
-                        <Logo className="logo" />
-                    </a>
-                </div>
+                <div className="searchContent">
+                    <SearchBar />
 
-                {/* <Logo /> */}
-                
-                <div className="mixPanelBox">
-                    <div className="º">
-                        <input type="text" className="inputSearch" placeholder="Busca marcas y productos"/>
-                        <button className="customButton">
-                            <i className="searchIcon fa fa-search" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                    
-                    <div className="responsiveSearchBox">
-                        <button className="responsiveSearchButton" >
-                            <i className="responsiveSearchIcon fa fa-search" aria-hidden="true"></i>
-                        </button>
-                    </div>
-
-                    {/* <ShoppingCartButton /> */}
+                    <ButtonCart />
 
                     <div className="profileBox">
                         <div className="profile-data">
