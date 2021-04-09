@@ -8,6 +8,7 @@ import './NavBar.css';
 
 import { Logo } from '../../shared/logo/logo';
 import { ButtonCart } from '../buttoncart/ButtonCart';
+import { Profile } from '../profile/Profile';
 
 export const NavBar = () => {
     
@@ -23,7 +24,9 @@ export const NavBar = () => {
 
                     <ButtonCart />
 
-                    <div className="profileBox">
+                    <Profile />
+
+                    {/* <div className="profileBox">
                         <div className="profile-data">
                             <h5 className="profileName">Sixto Romero</h5>
                             <div className="profileMenuBox">
@@ -38,7 +41,7 @@ export const NavBar = () => {
 
                     <div className="profileResponsiveBox">
                         <div className="profileImg"></div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="searchBoxResponsive">
